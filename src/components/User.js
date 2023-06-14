@@ -49,10 +49,13 @@ function User() {
   return (   
     <div className="user">
       { !isLoading && 
-        <div>
-          <div className="user-profile">
+        <div className="user-profile">
+          <div className="user-avatar">
             <img src={githubUser.avatar_url}></img>
-            <h2>{githubUser.name}</h2>
+          </div>  
+            <div className ="user-name">
+              <h2>{githubUser.name}</h2>
+            </div>
             <div className='user-stats'>
               <div>
                 <span>{githubUser.public_repos}</span>
@@ -67,7 +70,7 @@ function User() {
                 <h3>Following</h3>
               </div>
             </div>
-          </div>
+          
           <div className='user-repos'>
             <h2>My Repositories</h2>
             <div>          

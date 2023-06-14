@@ -43,7 +43,7 @@ function Search() {
         <div>
             <form onSubmit={findUser}>
                 <input type="text" name='user' placeholder='Github User Name...'/>
-                <input type="submit" value="Search"/>
+                <input className='button' type="submit" value="Search"/>
             </form>
         </div>
         <h2>{message}</h2>

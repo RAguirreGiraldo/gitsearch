@@ -10,7 +10,7 @@
   --app-green:#33ab4e;
   --app-purple:#833cff;
   --app-orange:#ff833c;
-  --app-orange-hover:#fe7a2d;
+  --app-orange-hover:#dc5e16;
   --app-blue:#3c57ff;
   --app-blue-hover:#364ee6;
   --app-light-bg: #ffffff;
@@ -26,9 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 370px;
-  width: min(100% - 30px, 1200px);
-  margin-inline: auto;
+  margin-top: 270px;
   color: var(--app-light-bg);
 }
 
@@ -39,76 +37,83 @@ div p, h1, h2, h3, h4, h5, h6, li, i, a span {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--app-light-bg);
   letter-spacing: 0.2px;
 }
 
-.stars-rating-container{
+input {
+  height: 25px;
+  border-radius: 7px;
+ ;
+}
+
+input[type='text'] {
+  padding: 10px 15px;
+  width: 55%;
+}
+
+input[type='submit'], button {
+  height: 50px;
+  background-color: var(--app-orange);
+  text-transform: uppercase;
+  color: var(--app-light-bg);
+  width: calc(30% - 5px);
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+input ~ input {
+  margin-left: 6px
+}
+
+/* User Style */
+
+.user {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-top: -200px;
+}
+
+.user-profile {
+  text-align: center;
+  font-weight: 400;
+}
+
+.user-avatar img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.user-name > h2 {
+  font-size: 40px;
+  letter-spacing: 0.9px;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: px;
+  letter-spacing: 0.9px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.user-repos {
+  margin-top: 20px;
+}
+
+.repos-container {
+  display: flex;
   flex-direction: column;
 }
 
-.stars-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-
-svg {
-  font-size: 50px;
-}
-
-.rating-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.rating-text {
-  align-items: center;
-  margin-top: 45px;
-}
-
-button {
-  position: absolute;
-  bottom: 55px;
-  right: 35px;
-  width: 150px;
-  height: 42px;
-  border-radius: 45px;
-  background-color: var(--app-blue);
-  color: var(--app-light-bg);
-  display: block; 
-  font-size: 15px;
-  font-weight: 250;
-}
-
-.dialog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 350px;
-  height: 380px;
-  transform: translate(-50%, -50%);
-  background-color: var(--app-light-bg);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-}
-
-.close-dialog-button {
-  position: center;
-  align-items: center;
-  bottom: 20px;
-  right: 20px;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.repo {
+  margin-bottom: 10px;
 }
