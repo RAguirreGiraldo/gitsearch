@@ -1,0 +1,114 @@
+@import url('./reset.css');
+
+:root {
+  --app-dark-bg:#1a1d28;
+  --font: rgb(255 255 255 /1);
+  --section-bg:#262930;
+  --border-color: #2a2c34;
+  --border-radius: 6px;
+  --app-red:#ff3c57;
+  --app-green:#33ab4e;
+  --app-purple:#833cff;
+  --app-orange:#ff833c;
+  --app-orange-hover:#fe7a2d;
+  --app-blue:#3c57ff;
+  --app-blue-hover:#364ee6;
+  --app-light-bg: #ffffff;
+  --app-gray: #c0bbbac3;
+}
+
+body { 
+  background-color: var(--app-dark-bg); 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 370px;
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+  color: var(--app-light-bg);
+}
+
+div p, h1, h2, h3, h4, h5, h6, li, i, a span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--app-light-bg);
+  letter-spacing: 0.2px;
+}
+
+.stars-rating-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+svg {
+  font-size: 50px;
+}
+
+.rating-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.rating-text {
+  align-items: center;
+  margin-top: 45px;
+}
+
+button {
+  position: absolute;
+  bottom: 55px;
+  right: 35px;
+  width: 150px;
+  height: 42px;
+  border-radius: 45px;
+  background-color: var(--app-blue);
+  color: var(--app-light-bg);
+  display: block; 
+  font-size: 15px;
+  font-weight: 250;
+}
+
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 380px;
+  transform: translate(-50%, -50%);
+  background-color: var(--app-light-bg);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.close-dialog-button {
+  position: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
