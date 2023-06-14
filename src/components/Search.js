@@ -19,9 +19,10 @@ function Search() {
   useEffect(() => {
    const getGithubUser = async () => {
         try {
-            const token = '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';
-            const options = {headers: { Authorization: `Bearer ${token}`}};
-            const {data} = await axios.get(`${API_URL}${userName}`, options); 
+            //const token = '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';
+            //const options = {headers: { Authorization: `Bearer ${token}`}};
+            //const {data} = await axios.get(`${API_URL}${userName}`, options); 
+            const {data} = await axios.get(`${API_URL}${userName}`); 
             console.log(data);
             /// redirect to user repos.
             redirect(`/gitsearch/user/${userName}`);            

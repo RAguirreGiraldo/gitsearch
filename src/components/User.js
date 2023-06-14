@@ -14,12 +14,13 @@ function User() {
 
   useEffect(() => {
 
-    const token = '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';
-    const options = {headers: { Authorization: `Bearer ${token}`}};
+    //const token = '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';
+    //const options = {headers: { Authorization: `Bearer ${token}`}};
 
      const getGithubUser = async () => {
          try {
-             const {data} = await axios.get(`${API_URL}${userName}`, options); 
+            // const {data} = await axios.get(`${API_URL}${userName}`, options); 
+             const {data} = await axios.get(`${API_URL}${userName}`); 
              setgithubUser(data); 
              
          } catch (error) {
@@ -29,7 +30,8 @@ function User() {
 
      const getUserRepos = async () => {
         try {
-            const {data} = await axios.get(`${API_URL}${userName}/repos`, options); 
+            //const {data} = await axios.get(`${API_URL}${userName}/repos`, options); 
+            const {data} = await axios.get(`${API_URL}${userName}/repos`); 
             setRepositories(data);            
         } catch (error) {
             setgithubUser([]);
