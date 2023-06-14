@@ -9,7 +9,7 @@ function App() {
         <div className='container'>
           <Routes>
             <Route exact path="/gitsearch" element={<Search/>} /> 
-            <Route path="/gitsearch/user/:userName" element={<User/>} />        
+            <Route exact path="/gitsearch/user/:userName" element={<User/>} />   
           </Routes>
         </div>
       </main>         
