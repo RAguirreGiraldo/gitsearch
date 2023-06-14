@@ -8,8 +8,8 @@ function App() {
       <main>
         <div className='container'>
           <Routes>
-            <Route exact path="/" element={<Search/>} /> 
-            <Route path="/user/:userName" element={<User/>} />        
+            <Route exact path="/gitsearch" element={<Search/>} /> 
+            <Route path="/gitsearch/user/:userName" element={<User/>} />        
           </Routes>
         </div>
       </main>         
