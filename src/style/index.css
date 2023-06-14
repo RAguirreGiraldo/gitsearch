@@ -87,6 +87,7 @@ input ~ input {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  border: 2px solid silver;
 }
 
 .user-name > h2 {
