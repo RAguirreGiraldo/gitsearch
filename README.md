@@ -1,8 +1,6 @@
-## Stateful Star Rating Component
+## github Search Using Routes in React and Params
 
-The StarRating function is a stateful React component that allows users to provide 
-ratings using a star-based interface. The component utilizes both state and props 
-to manage the rating functionality..
+Route redirection and params in React are powerful tools for navigating between different pages and passing dynamic data. They allow developers to create dynamic routes and extract values from the URL to customize the page content. With the help of Route and param, developers can build interactive and personalized web applications.
 
 Click [here](https://raguirregiraldo.github.io/gitsearch/) to view the page
 
