@@ -19,12 +19,12 @@ function Search() {
   useEffect(() => {
    const getGithubUser = async () => {
         try {
-            const token = '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';
+            const token = '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';
             const options = {headers: { Authorization: `Bearer ${token}`}};
             const {data} = await axios.get(`${API_URL}${userName}`, options); 
             console.log(data);
             /// redirect to user repos.
-            redirect(`/user/${userName}`);            
+            redirect(`/gitsearch/user/${userName}`);            
         } catch (error) {
             console.error(error);
             setMessage('User not found');
