@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/RAguirreGiraldo/gitsearch.git/static/css/main.53d7814a.css",
-    "main.js": "/RAguirreGiraldo/gitsearch.git/static/js/main.c946b2a8.js",
-    "index.html": "/RAguirreGiraldo/gitsearch.git/index.html",
-    "main.53d7814a.css.map": "/RAguirreGiraldo/gitsearch.git/static/css/main.53d7814a.css.map",
-    "main.c946b2a8.js.map": "/RAguirreGiraldo/gitsearch.git/static/js/main.c946b2a8.js.map"
+    "main.css": "/gitsearch/static/css/main.53d7814a.css",
+    "main.js": "/gitsearch/static/js/main.c946b2a8.js",
+    "index.html": "/gitsearch/index.html",
+    "main.53d7814a.css.map": "/gitsearch/static/css/main.53d7814a.css.map",
+    "main.c946b2a8.js.map": "/gitsearch/static/js/main.c946b2a8.js.map"
   },
   "entrypoints": [
     "static/css/main.53d7814a.css",
